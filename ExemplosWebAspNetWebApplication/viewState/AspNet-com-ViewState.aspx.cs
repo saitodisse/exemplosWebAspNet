@@ -8,7 +8,6 @@ namespace ExemplosWebAspNetWebApplication.viewState
         protected void Page_Load(object sender, EventArgs e)
         {
             StaticHelper.ExibirRequests(litMensagem, Request.Form);
-
             if (!IsPostBack)
             {
                 StaticHelper.Preencher_grid(GridView1, 100);
